@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Sign Up</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <ion-title>First Name: {{FN}} </ion-title>
+    <br>
+    <input type = "text" [(ngModel)] = "FN">
+    <br>
+    <button ion-button (click) = openConfirmationPage() >Confirm</button> 
+</ion-content>
