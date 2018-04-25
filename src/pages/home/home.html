@@ -1,52 +1,94 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Saftech Fonez</ion-title>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title>
+      Saftech Fonez
+    </ion-title>
   </ion-navbar>
-  <button ion-button color="danger" clear (click) = "signUp()">Sign Up</button>
-  
+  <ion-toolbar color="dark">
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar>
+
 </ion-header>
 
-<ion-content padding >
+<ion-content padding>
   <div text-center>
-  <h2>Welcome to Saftech Fonez</h2>
-  <p>Retailers and Wholesalers throughout Ireland and UK</p>
-  <p>Stockists of leading brands in accessories.</p>
-</div>
+    <h2>Welcome to Saftech Fonez</h2>
+    <p>Retailers and Wholesalers throughout Ireland and UK</p>
+    <p>Stockists of leading brands in accessories.</p>
 
-  <ion-content class="homepage-button">
+    <ion-slides>
+        <ion-slide>
+            <img src="/assets/imgs/Slide1.png" (click) = phoneList()/>
+          <h3>The Camera...Reimagined</h3>
+        </ion-slide>
+        <ion-slide>
+            <img src="/assets/imgs/Slide2.jpg" (click) = phoneList()/>
+          <h3>April Phone Deals</h3>
+        </ion-slide>
+        <ion-slide>
+            <img src="/assets/imgs/Slide3.jpg" (click) = phoneList()/>
+          <h3>Save Up To €100 *</h3>
+        </ion-slide>
+      </ion-slides>
+ 
 
-      <button ion-button full (click) = "phoneList()">Phones</button>
-      <button ion-button full (click) = "accessoriesList">Accessories</button>                
+  <h1>Samsung Best Sellers</h1>
 
-  <ion-content class="card-background-page">
 
-    <ion-card>
-        <h2></h2>
-      <img src="/assets/imgs/SaftechFonez.png"/>
-    </ion-card>
-    
-    <ion-card>
-      <img src="/assets/imgs/samsung-galaxy-S9.jpg"/>
-      <h2>Samsung Galaxy S9 Retail Price Starting From €740</h2>
-    </ion-card>
+  <ion-grid>
+      <ion-row>
+        <ion-col>
+          <img src="/assets/imgs/galaxy-s8-pinkgold-l45.png" /> SAMSUNG GALAXY S8
+          €425
+        </ion-col>
+        <ion-col>
+          <img src="/assets/imgs/galaxy-note-8BLACK.png" /> Samsung Galaxy Note 8
+          €595
+        </ion-col>
+        <ion-col>
+          <img src="/assets/imgs/galaxy-s9-blue-r45.png" /> SAMSUNG GALAXY S9
+          €685
+        </ion-col>
+      </ion-row>
+      <h1>iPhone Best Sellers</h1>
+      <ion-row>
+          <ion-col>
+            <img src="/assets/imgs/iphone-xSPACEGREY.png" /> iPhone X
+            €315
+          </ion-col>
+          <ion-col>
+            <img src="/assets/imgs/iphone-8-plus-red-back.png" /> iPhone 8 Plus (Red Edition)
+            €475
+          </ion-col>
+          <ion-col>
+            <img src="/assets/imgs/iphone-7ROSEGOLD.png" /> APPLE IPHONE 7
+            €575
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
 
-    <ion-card>
-        <img src="/assets/imgs/iphoneX.png"/>
-        <h2>iPhone X Retail Price Starting From €1000</h2>
-    </ion-card>
-
-    
   
+  <ion-menu [content]="content">
+
+    <h4>Menu</h4>
+
+    <ion-content>
+      <ion-list>
+        <button ion-button round outline (click)="phoneList()">Phones</button>
+        <br>
+        <button ion-button round outline (click)="accessoriesList()">Accessories</button>
+        <br>
+        <button ion-button round outline (click)="email()">Email</button>
+        <br>
+        <ion-item menuClose detail-none>Close</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-nav #content [root]="rootPage"></ion-nav>
+
   </ion-content>
-</ion-content>
-</ion-content>
-
-  <!--<p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>-->
-

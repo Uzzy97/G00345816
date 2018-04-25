@@ -3,17 +3,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-phones',
-  templateUrl: 'phones.html',
+  selector: 'page-accessories',
+  templateUrl: 'accessories.html',
 })
-export class PhonesPage {
-
+export class AccessoriesPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad PhonesPage');
+    console.log('ionViewDidLoad AccessoriesPage');
+  }
 
-}
 }

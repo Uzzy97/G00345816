@@ -1,19 +1,16 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { FingerprintAIO } from '@ionic-native/fingerprint-aio';
 
 @IonicPage()
 @Component({
-  selector: 'page-phones',
-  templateUrl: 'phones.html',
+  selector: 'page-login',
+  templateUrl: 'login.html',
 })
-export class PhonesPage {
-
+export class LoginPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
+  
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad PhonesPage');
-
-}
 }
