@@ -11,6 +11,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginPage } from '../pages/login/login';
+import { LocationPage } from '../pages/location/location';
 import { PhonesPage } from '../pages/phones/phones';
 import { AccessoriesPage } from '../pages/accessories/accessories';
 import { SignUpPage } from '../pages/sign-up/sign-up';
@@ -18,7 +19,7 @@ import { IonicStorageModule } from '@ionic/storage';
 import { FingerprintAIO } from '@ionic-native/fingerprint-aio';
 import { Camera } from '@ionic-native/camera';
 import { EmailComposer } from '@ionic-native/email-composer';
-
+import { FeedbackPage } from '../pages/feedback/feedback';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,9 @@ import { EmailComposer } from '@ionic-native/email-composer';
     PhonesPage,
     AccessoriesPage,
     SignUpPage,
-    LoginPage
+    LoginPage,
+    LocationPage,
+    FeedbackPage
   ],
   imports: [
     BrowserModule,
@@ -49,7 +52,9 @@ import { EmailComposer } from '@ionic-native/email-composer';
     PhonesPage,
     AccessoriesPage,
     SignUpPage,
-    LoginPage
+    LoginPage,
+    LocationPage,
+    FeedbackPage
   ],
   providers: [
     StatusBar,

@@ -9,6 +9,7 @@ import { ContactPage } from '../pages/contact/contact';
 import { LoginPage } from '../pages/login/login';
 import { TabsPage } from '../pages/tabs/tabs';
 import { FingerprintAIO } from '@ionic-native/fingerprint-aio';
+import { LocationPage } from '../pages/location/location';
 
 @Component({
   templateUrl: 'app.html'

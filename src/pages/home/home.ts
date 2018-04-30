@@ -2,9 +2,11 @@ import { Component } from '@angular/core';
 import { NavController, MenuController } from 'ionic-angular';
 import { PhonesPage } from './../phones/phones';
 import { SignUpPage } from './../sign-up/sign-up';
+import { LocationPage } from './../location/location';
 import { AccessoriesPage } from '../accessories/accessories';
 import {EmailComposer} from '@ionic-native/email-composer';
 import {Camera, CameraOptions} from '@ionic-native/camera';
+import { FeedbackPage } from '../feedback/feedback';
 
 
 @Component({
@@ -60,9 +62,22 @@ export class HomePage {
   signUp(){
     this.navCtrl.push(SignUpPage);
   }
+  location(){
+    this.navCtrl.push(LocationPage);
+  }
   email(){
     this.navCtrl.push(SignUpPage);
   }
+
+  feedback(){
+    this.navCtrl.push(FeedbackPage);
+  }
+  btnClicked(){
+    alert("Change Colour");
+    
+  }
+
+
 
 
 }

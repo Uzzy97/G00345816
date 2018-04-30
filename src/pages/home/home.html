@@ -9,7 +9,9 @@
     </ion-title>
   </ion-navbar>
   <ion-toolbar color="dark">
-    <ion-searchbar></ion-searchbar>
+    <div class = "change">
+      <button ion-button round (click)="btnClicked()">Change Colour</button>
+      </div>
   </ion-toolbar>
 
 </ion-header>
@@ -83,7 +85,11 @@
         <br>
         <button ion-button round outline (click)="accessoriesList()">Accessories</button>
         <br>
+        <button ion-button round outline (click)="location()">Our Location</button>
+        <br>
         <button ion-button round outline (click)="email()">Email</button>
+        <br>
+        <button ion-button round outline (click)="feedback()">Feedback</button>
         <br>
         <ion-item menuClose detail-none>Close</ion-item>
       </ion-list>
