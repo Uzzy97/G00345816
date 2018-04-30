@@ -72,12 +72,4 @@ export class HomePage {
   feedback(){
     this.navCtrl.push(FeedbackPage);
   }
-  btnClicked(){
-    alert("Change Colour");
-    
-  }
-
-
-
-
 }
