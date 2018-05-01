@@ -65,7 +65,7 @@ export class HomePage {
   location(){
     this.navCtrl.push(LocationPage);
   }
-  email(){
+  services(){
     this.navCtrl.push(SignUpPage);
   }
 

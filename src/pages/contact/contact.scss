@@ -1,16 +1,21 @@
 page-contact {
-    //ion-content{
-        //background: #904779 !important;
-    //}
 
     .bg{
         background: linear-gradient(to bottom, #000000 0%, #fff 100%);
     }
     .address{
-        
-        background: #eeff00 !important;
+        text-align: center;
+    }
+    .change{
         text-align: center;
         color: #000000;
+
     }
+    
+        
+        //background: #eeff00 !important;
+        //text-align: center;
+        //color: #000000;
+    
 
 }
