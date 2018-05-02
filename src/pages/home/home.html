@@ -8,15 +8,35 @@
       Saftech Fonez
     </ion-title>
   </ion-navbar>
-  <ion-toolbar color="dark"></ion-toolbar>
+  <ion-toolbar color="bright"><h2>Welcome to Saftech Fonez</h2></ion-toolbar>
 
 </ion-header>
 
 <ion-content padding>
+    <ion-menu [content]="content">
+
+        <h4>Menu</h4>
+    
+        <ion-content>
+          <ion-list>
+            <button ion-button round outline block (click)="phoneList()">Phones</button>
+            <br>
+            <button ion-button round outline block (click)="accessoriesList()">Accessories</button>
+            <br>
+            <button ion-button round outline block (click)="location()">Our Location</button>
+            <br>
+            <button ion-button round outline block (click)="services()">Our Services</button>
+            <br>
+            <button ion-button round outline block (click)="feedback()">Customer Feedback</button>
+            <br>
+            <ion-item menuClose detail-none>Close</ion-item>
+          </ion-list>
+        </ion-content>
+      </ion-menu>
+      <ion-nav #content [root]="rootPage"></ion-nav>
   <div text-center>
-    <h2>Welcome to Saftech Fonez</h2>
-    <p>Retailers and Wholesalers throughout Ireland and UK</p>
-    <p>Stockists of leading brands in accessories.</p>
+    <h6>Retailers and Wholesalers throughout Ireland and UK</h6>
+    <h6>Stockists of leading brands in accessories.</h6>
 
     <ion-slides>
         <ion-slide>
@@ -71,26 +91,6 @@
     </div>
 
   
-  <ion-menu [content]="content">
-
-    <h4>Menu</h4>
-
-    <ion-content>
-      <ion-list>
-        <button ion-button round outline (click)="phoneList()">Phones</button>
-        <br>
-        <button ion-button round outline (click)="accessoriesList()">Accessories</button>
-        <br>
-        <button ion-button round outline (click)="location()">Our Location</button>
-        <br>
-        <button ion-button round outline (click)="services()">Our Services</button>
-        <br>
-        <button ion-button round outline (click)="feedback()">Customer Feedback</button>
-        <br>
-        <ion-item menuClose detail-none>Close</ion-item>
-      </ion-list>
-    </ion-content>
-  </ion-menu>
-  <ion-nav #content [root]="rootPage"></ion-nav>
+  
 
   </ion-content>

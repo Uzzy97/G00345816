@@ -35,7 +35,14 @@ export class FeedbackPage {
     });
 
   }
- 
+
+  
+  clear(){
+    this.storage.remove("myStore");
+    alert("Refresh Page To See Feedback");
+
+
+  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad FeedbackPage');

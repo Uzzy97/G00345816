@@ -1,10 +1,13 @@
 page-about {
 
     .bg-image{
+        // Assigned and set the background image to about.html
         background-image: url('../assets/imgs/593788.jpg');
+        // No repeat of the image
         background-repeat: no-repeat;
+        // Image position is center
         background-position: center;
+        // Size is contain
         background-size: contain;
     }
-
 }

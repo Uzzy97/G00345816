@@ -1,28 +1,27 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Storage } from '@ionic/storage';
 import { Camera, CameraOptions } from '@ionic-native/camera';
 import { EmailComposer } from '@ionic-native/email-composer';
 
 @IonicPage()
 @Component({
-  selector: 'page-sign-up',
-  templateUrl: 'sign-up.html',
+  selector: 'page-service',
+  templateUrl: 'service.html',
 })
-export class SignUpPage {
+export class ServicePage {
   currentImage=null;
-  
-  constructor(private storage: Storage, public navCtrl: NavController, private camera: Camera, private emailComposer: EmailComposer) {
-  }
 
+  constructor(public navCtrl: NavController, private camera: Camera, private emailComposer: EmailComposer) {
+  }
   captureImage(){
     const options: CameraOptions={
       sourceType: this.camera.PictureSourceType.PHOTOLIBRARY,
       destinationType: this.camera.DestinationType.FILE_URI
     }
 
-    this.camera.getPicture(options).then(ImageData=>{
-      this.captureImage = ImageData;
+
+    this.camera.getPicture(options).then(imageData=>{
+      this.currentImage = imageData;
     }, err => {
       console.log('Image error: ', err);
     });
@@ -33,8 +32,7 @@ export class SignUpPage {
       attachments: [
         this.currentImage
       ],
-      subject: 'My Cool Image',
-      body: 'Test'
+      subject: 'Customer Queries'
     };
 
     this.emailComposer.open(email);
@@ -44,4 +42,3 @@ export class SignUpPage {
     
 
 }
-

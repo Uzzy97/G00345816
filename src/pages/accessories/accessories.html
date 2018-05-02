@@ -1,82 +1,71 @@
 <ion-header>
-    <ion-navbar>
-      <ion-title>
-        Accessories
-      </ion-title>
-    </ion-navbar>
-  </ion-header>
+  <ion-navbar>
+    <!--Title given to page-->
+    <ion-title>
+      Accessories
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-segment [(ngModel)]="galleryType" color="primary">
+    <ion-segment-button value="regular">
+      Wholesale Prices
+    </ion-segment-button>
+
+  </ion-segment>
   
-  <ion-content padding>
-    <ion-segment [(ngModel)]="galleryType" color="primary">
-      <ion-segment-button value="regular">
-        Wholesale Prices
-      </ion-segment-button>
-  
-    </ion-segment>
-  
-    <div text-center>
-      <!-- Responsive Layout with Ion Grid-->
-      <ion-grid>
-        <ion-row>
-          <ion-col>
-            <img src="/assets/imgs/otterbox-strada-iphone-x-colours_2.png" /> OTTERBOX STRADA IPHONE X
-            €6
-          </ion-col>
-          <ion-col>
-            <img src="/assets/imgs/otterbox-symmetry-iphone-7-8-all-colours_1.png" /> OTTERBOX SYMMETRY IPHONE 7/8
-            €6
-          </ion-col>
-          <ion-col>
-            <img src="/assets/imgs/otterbox-iphone-x-inside-lines.png" /> OTTERBOX LINES IPHONE X
-            €5.50
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <img src="/assets/imgs/sandisk-micro-sd-card-64gb.png" /> SANDISK MICRO SD CARD 64GB
-            €12
-          </ion-col>
-          <ion-col>
-            <img src="/assets/imgs/Google-Chromecast-2-Black-Front.png" /> GOOGLE CHROMECAST 2
-            €16.50
-          </ion-col>
-          <ion-col>
-            <img src="/assets/imgs/samsung-gear-fit2-pro-black_1.png" /> SAMSUNG GEAR FIT 2 PRO
-            €32.90
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <img src="/assets/imgs/centrix-fade-cover.png" /> CENTRIX FADE PHONE COVER
-            €4.50
-          </ion-col>
-          <ion-col>
-            <img src="/assets/imgs/Samsung-Galaxy-S7-Flip-Case.png" /> SAMSUNG GALAXY S7 FLIP CASE
-            €6
-          </ion-col>
-          <ion-col>
-            <img src="/assets/imgs/xqisit-adour-galaxy-s7-colours.png" /> ADOUR GALAXY S7
-            €6.50
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <img src="/assets/imgs/JBL-T450-Bluetooth-Headphones-Black-E01810005.png" /> JBL BLUETOOTH HEADPHONES
-            €13.50
-          </ion-col>
-          <ion-col>
-            <img src="/assets/imgs/drop-ring-stand.png" /> DROP RING STAND
-            €2.50
-          </ion-col>
-          <ion-col>
-            <img src="/assets/imgs/juice-2m-lightning-cable-blue.png" /> 2M LIGHTENING LABLE
-            €3.75
-          </ion-col>
-        </ion-row>
-  
-  
-  
-      </ion-grid>
-  
-    </div>
-  </ion-content>
+  <div text-center>
+    <!--Responsive layout with Ion Grid-->
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <img src="/assets/imgs/otterbox-strada-iphone-x-colours_2.png" /> OTTERBOX STRADA IPHONE X €6
+        </ion-col>
+        <ion-col>
+          <img src="/assets/imgs/otterbox-symmetry-iphone-7-8-all-colours_1.png" /> OTTERBOX SYMMETRY IPHONE 7/8 €6
+        </ion-col>
+        <ion-col>
+          <img src="/assets/imgs/otterbox-iphone-x-inside-lines.png" /> OTTERBOX LINES IPHONE X €5.50
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <img src="/assets/imgs/sandisk-micro-sd-card-64gb.png" /> SANDISK MICRO SD CARD 64GB €12
+        </ion-col>
+        <ion-col>
+          <img src="/assets/imgs/Google-Chromecast-2-Black-Front.png" /> GOOGLE CHROMECAST 2 €16.50
+        </ion-col>
+        <ion-col>
+          <img src="/assets/imgs/samsung-gear-fit2-pro-black_1.png" /> SAMSUNG GEAR FIT 2 PRO €32.90
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <img src="/assets/imgs/centrix-fade-cover.png" /> CENTRIX FADE PHONE COVER €4.50
+        </ion-col>
+        <ion-col>
+          <img src="/assets/imgs/Samsung-Galaxy-S7-Flip-Case.png" /> SAMSUNG GALAXY S7 FLIP CASE €6
+        </ion-col>
+        <ion-col>
+          <img src="/assets/imgs/xqisit-adour-galaxy-s7-colours.png" /> ADOUR GALAXY S7 €6.50
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <img src="/assets/imgs/JBL-T450-Bluetooth-Headphones-Black-E01810005.png" /> JBL BLUETOOTH HEADPHONES €13.50
+        </ion-col>
+        <ion-col>
+          <img src="/assets/imgs/drop-ring-stand.png" /> DROP RING STAND €2.50
+        </ion-col>
+        <ion-col>
+          <img src="/assets/imgs/juice-2m-lightning-cable-blue.png" /> 2M LIGHTENING LABLE €3.75
+        </ion-col>
+      </ion-row>
+
+
+
+    </ion-grid>
+
+  </div>
+</ion-content>
